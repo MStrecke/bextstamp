@@ -6,7 +6,7 @@ This project demonstrates how to make a droplet and combine it with a small pyth
 
 ## bextstamp.py
 
-### Why Pyhton 2?
+### Why Python 2?
 
 This utility uses the soon to be deprecated Python 2 because this version is preinstalled.
 
