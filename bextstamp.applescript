@@ -6,8 +6,10 @@ end run
 
 on process_item(this_item)
 	set mypro to POSIX path of (path to resource "bextstamp.py")
+	set this_item_quoted to quoted form of this_item
+
 	try
-		do shell script ("python " & mypro & " " & this_item)
+		do shell script ("python " & mypro & " " & this_item_quoted)
 	on error errmsg number errnr
 		set errorMessage to "Error " & errnr & " during processing of " & this_item
 		display dialog errorMessage buttons {"Sh!t"}
